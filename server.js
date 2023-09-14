@@ -50,7 +50,7 @@ app.put('/image', (req, res) => image.handleImage(req, res, dbase));
 
 app.post('/imageUrl', (req, res) => image.handleImageUrl(req, res));
 
-console.log(`port: ${process.env.port}`); 
-app.listen(3000, ()=>{
+
+app.listen(process.env.PORT || 3000, ()=>{
     console.log(`Server is listening on port ${process.env.port}`); 
 });
