@@ -25,7 +25,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors({
-    origin: "http://localhost:3001",
+    origin: "https://facecrypt.onrender.com",
     xContentTypeOptions: 'nosniff',
     optionsSuccessStatus: 200,
     headers: {
