@@ -13,11 +13,11 @@ const profile = require('./controllers/profile.js');
 const dbase = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'dpg-ck149undorps73b8hb30-a',
       port : 5432,
-      user : 'postgres',
-      password : 'Musa12***', 
-      database : 'smartbrain'
+      user : 'smart_brain_db_zimy_user',
+      password : 'yzu3Jdg2aykERPGYGbhOnSNt44Ysc3Sn', 
+      database : 'smart_brain_db_zimy'
     }
   });
 
@@ -51,6 +51,6 @@ app.put('/image', (req, res) => image.handleImage(req, res, dbase));
 app.post('/imageUrl', (req, res) => image.handleImageUrl(req, res));
 
 
-app.listen(process.env.PORT || 3000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log(`Server is listening on port ${process.env.PORT}`); 
 });
