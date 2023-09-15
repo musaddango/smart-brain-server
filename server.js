@@ -48,7 +48,7 @@ app.get('/profile/:id', (req, res)=> profile.handleProfile(req, res, dbase));
 
 app.put('/image', (req, res) => image.handleImage(req, res, dbase));
 
-app.post('/imageUrl', (req, res) => image.handleImageUrl(req, res));
+app.put('/imageUrl', (req, res) => image.handleImageUrl(req, res));
 
 
 app.listen(process.env.PORT, ()=>{
